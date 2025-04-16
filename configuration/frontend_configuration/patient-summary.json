@@ -1,0 +1,157 @@
+{
+  "@openmrs/esm-patient-chart-app": {
+    "extensionSlots": {
+      "hct-patient-summary-dashboard-slot": {
+        "add": ["program-summary"],
+        "configure": {
+          "program-summary": {
+            "tileDefinitions": [
+              {
+                "tileHeader": "characteristicsTitle",
+                "columns": [
+                  {
+                    "id": "artCohort",
+                    "title": "ArtCohortTitle",
+                    "encounterType": "74bf4fe6-8fdb-4228-be39-680a93a9cf6d",
+                    "concept": "159599AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "isDate": true,
+                    "conceptMappings": [
+                      "159599AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "162572AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "164516AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "164431AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "160738AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                    ]
+                  },
+                  {
+                    "id": "currentRegimen",
+                    "hasSummary": true,
+                    "title": "currentRegimenTitle",
+                    "encounterType": "74bf4fe6-8fdb-4228-be39-680a93a9cf6d",
+                    "concept": "dfbe256e-30ba-4033-837a-2e8477f2e7cd",
+                    "summaryConcept": {
+                      "primaryConcept": "164515AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                    }
+                  },
+                  {
+                    "id": "dsdModel",
+                    "title": "dSDModelTitle",
+                    "hasSummary": true,
+                    "encounterType": "62ee5922-a229-48d3-a1da-875c1ffa9436",
+                    "concept": "166448AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "summaryConcept": {
+                      "primaryConcept": "166448AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                    }
+                  },
+                  {
+                    "id": "populationType",
+                    "title": "populationTypeTitle",
+                    "encounterType": "7e54cd64-f9c3-11eb-8e6a-57478ce139b0",
+                    "concept": "166432AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "hasSummary": true,
+                    "summaryConcept": {
+                      "primaryConcept": "166433AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "secondaryConcept": "2bf14240-b2b2-42b2-8cf3-b5f8a0cb7764"
+                    }
+                  }
+                ]
+              },
+              {
+                "tileHeader": "hivMonitoring",
+                "columns": [
+                  {
+                    "id": "viralLoad",
+                    "title": "currentViralLoad",
+                    "encounterType": "3596fafb-6f6f-4396-8c87-6e63a0f1bd71",
+                    "concept": "1305AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "hasSummary": true,
+                    "summaryConcept": {
+                      "primaryConcept": "163724AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "isDate": true
+                    }
+                  },
+                  {
+                    "id": "lastCD4Count",
+                    "title": "lastCD4CountTitle",
+                    "hasSummary": true,
+                    "encounterType": "3596fafb-6f6f-4396-8c87-6e63a0f1bd71",
+                    "concept": "5497AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "summaryConcept": {
+                      "primaryConcept": "163724AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "isDate": true
+                    }
+                  }
+                ]
+              },
+              {
+                "tileHeader": "lastVisitDetails",
+                "columns": [
+                  {
+                    "id": "tbScreening",
+                    "title": "tBScreeningTitle",
+                    "encounterType": "cb0a65a7-0587-477e-89b9-cf2fd144f1d4",
+                    "concept": "160108AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "hasSummary": true,
+                    "summaryConcept": {
+                      "primaryConcept": "164515AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "isDate": true
+                    }
+                  },
+                  {
+                    "id": "nextAppointmentDate",
+                    "title": "nextAppointmentDateTitle",
+                    "hasSummary": true,
+                    "encounterType": "cb0a65a7-0587-477e-89b9-cf2fd144f1d4",
+                    "concept": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "summaryConcept": {
+                      "primaryConcept": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "isDate": true,
+                      "hasCalculatedDate": true
+                    }
+                  },
+                  {
+                    "id": "programStatus",
+                    "title": "programStatusTitle",
+                    "encounterType": "a221448d-512b-4750-84bf-d29be9f802b3",
+                    "concept": "163105AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  }
+                ]
+              }
+            ]
+          },
+          "Translation overrides": {
+            "en": {
+              "characteristicsTitle": "Characteristics",
+              "hivMonitoring": "HIV Monitoring",
+              "lastVisitDetails": "Last Visit Details",
+              "artCohortTitle": "ART Cohort",
+              "currentRegimen": "Current Regimen",
+              "viralLoad": "Current Viral Load",
+              "dsdModelTitle": "DSD Model",
+              "populationTypeTitle": "Population Type",
+              "reasonForCurrentVL": "Reason For Current VL",
+              "lastCD4CountTitle": "Last CD4 Count",
+              "tbScreeningTitle": "TB Screening",
+              "oIsTitle": "OIs",
+              "nextAppointmentDateTitle": "Next Appointment Date",
+              "programStatusTitle": "Program Status"
+            },
+            "fr": {
+              "artCohortTitle": "Cohorte TAR",
+              "currentRegimen": "Régime actuel",
+              "viralLoad": "Charge virale actuelle",
+              "dsdModelTitle": "Modèle DSD",
+              "populationTypeTitle": "Type de population",
+              "reasonForCurrentVL": "Raison de la charge virale actuelle",
+              "lastCD4CountTitle": "Dernier compte CD4",
+              "tbScreeningTitle": "Dépistage de la tuberculose",
+              "oIsTitle": "IO",
+              "nextAppointmentDateTitle": "Date du prochain rendez-vous",
+              "programStatusTitle": "Statut du programme"
+            }
+          }
+        }
+      }
+    }
+  }
+}

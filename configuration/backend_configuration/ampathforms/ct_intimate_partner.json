@@ -1,0 +1,247 @@
+{
+  "name": "Intimate Partner Violence Form",
+  "version": "1",
+  "published": true,
+  "retired": false,
+  "description":"intimate partner abuse or aggression that occurs in a romantic relationship",
+  "pages": [
+    {
+      "label": "IPV Screening",
+      "sections": [
+        {
+          "label": "Introduction",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "markdown",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "fooMarkdown",
+              "value": [
+                "**Introduction:** Use this form to Document intimate partner abuse or aggression that occurs in a romantic relationship."
+              ]
+            }
+          ]
+        },
+        {
+          "label": "IPV Assessment",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Screening Date",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "160753AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "screeningdate",
+              "behaviours": [
+                {
+                  "intent": "*",
+                  "required": "true",
+                  "unspecified": "ture",
+                  "hide": {
+                    "hideWhenExpression": "false"
+                  },
+                  "validators": [
+                    {
+                      "type": "date",
+                      "allowFutureDates": "false"
+                    },
+                    {
+                      "type": "js_expression",
+                      "failsWhenExpression": "isDateBefore(myValue, '1980-01-01')"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "Within the past year, has someone ever hit, kicked, slapped, or otherwise physically hurt you?",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "138574AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "answers": [
+                  {
+                    "label": "Yes",
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "label": "No",
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  }
+                ]
+              },
+              "id": "everBeenAssaulted",
+              "behaviours": [
+                {
+                  "intent": "*",
+                  "required": "true",
+                  "unspecified": "true",
+                  "hide": {
+                    "hideWhenExpression": "false"
+                  },
+                  "validators": []
+                }
+              ]
+            },
+            {
+              "label": "Has someone ever threatened to hurt you?",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "bd86f7ee-1d5f-4f5d-aa0f-4680aa6e65cb",
+                "answers": [
+                  {
+                    "label": "Yes",
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "label": "No",
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  }
+                ],
+                "conceptMappings": []
+              },
+              "id": "everBeenThreatened",
+              "behaviours": [
+                {
+                  "intent": "*",
+                  "required": "true",
+                  "unspecified": "true",
+                  "hide": {
+                    "hideWhenExpression": "false"
+                  },
+                  "validators": []
+                }
+              ]
+            },
+            {
+              "label": "Has someone ever forced you to do something sexually that made you feel uncomfortable?",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "123160AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "answers": [
+                  {
+                    "label": "Yes",
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "label": "No",
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  }
+                ],
+                "conceptMappings": []
+              },
+              "id": "everForcedSexually",
+              "behaviours": [
+                {
+                  "intent": "*",
+                  "required": "true",
+                  "unspecified": "true",
+                  "hide": {
+                    "hideWhenExpression": "false"
+                  },
+                  "validators": []
+                }
+              ]
+            },
+            {
+              "label": "By who?",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "checkbox",
+                "concept": "163568AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "answers": [
+                  {
+                    "concept": "5617AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Partner or spouse",
+                    "conceptMappings": [
+                      {
+                        "type": "AMPATH",
+                        "value": "5617"
+                      },
+                      {
+                        "type": "SNOMED-CT",
+                        "value": "127848009"
+                      },
+                      {
+                        "type": "CIEL",
+                        "value": "5617"
+                      }
+                    ]
+                  },
+                  {
+                    "concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Unknown Person",
+                    "conceptMappings": [
+                      {
+                        "type": "CIEL",
+                        "value": "1067"
+                      },
+                      {
+                        "type": "AMPATH",
+                        "value": "1067"
+                      },
+                      {
+                        "type": "SNOMED-CT",
+                        "value": "261665006"
+                      },
+                      {
+                        "type": "PIH",
+                        "value": "1067"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "id": "SexuallyMolestedbyWho",
+              "behaviours": [
+                {
+                  "intent": "*",
+                  "required": "true",
+                  "unspecified": "true",
+                  "hide": {
+                    "hideWhenExpression": "!includes('everForcedSexually','1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
+                  },
+                  "validators": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Notes",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Enter comments",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "165095AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "rows": ""
+              },
+              "id": "Note"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "availableIntents": [
+    {
+      "intent": "*",
+      "display": "Intimate Partner Violence Form"
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "uuid": "5c37314f-c558-3720-8780-d123c70f4e23",
+  "referencedForms": [],
+  "encounterType": "881fff34-b4a9-4d11-b2f5-a8a23a9f402b",
+  "encounter": "Intimate Partner Violence Form",
+  "allowUnspecifiedAll": true
+}

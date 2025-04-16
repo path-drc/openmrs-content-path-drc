@@ -1,0 +1,236 @@
+{
+  "name": "Service Delivery Model Form",
+  "version": "1",
+  "published": true,
+  "retired": false,
+  "pages": [
+    {
+      "label": "Service Delivery Model",
+      "sections": [
+        {
+          "label": "Introduction",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "type": "markdown",
+              "questionOptions": {
+                "rendering": "markdown"
+              },
+              "id": "fooMarkdown",
+              "value": [
+                "**This form is used to:** Document differentiated service deliver enrolment/ disenrolment."
+              ]
+            }
+          ]
+        },
+        {
+          "label": "DSD Enrollment",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Date enrolled to DSD",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "160753AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "weeksList": "",
+                "conceptMappings": [
+                  {
+                    "type": "SNOMED-CT",
+                    "value": "439771001"
+                  },
+                  {
+                    "type": "CIEL",
+                    "value": "160753"
+                  }
+                ]
+              },
+              "id": "dateEnrolledToDSD",
+              "behaviours": [
+                {
+                  "intent": "*",
+                  "required": "true",
+                  "unspecified": "true",
+                  "hide": {
+                    "hideWhenExpression": "!includes('dsdService','9cca15ce-db78-4a39-be0d-aae19e089ec1')"
+                  },
+                  "validators": [
+                    {
+                      "type": "date",
+                      "allowFutureDates": "false"
+                    },
+                    {
+                      "type": "js_expression",
+                      "failsWhenExpression": "isDateBefore(myValue, '1980-01-01') || myValue >= today()"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "Date disenrolled from DSD",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "160753AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "weeksList": "",
+                "conceptMappings": [
+                  {
+                    "type": "SNOMED-CT",
+                    "value": "439771001"
+                  },
+                  {
+                    "type": "CIEL",
+                    "value": "160753"
+                  }
+                ]
+              },
+              "id": "dateDisenrolledDSD",
+              "behaviours": [
+                {
+                  "intent": "*",
+                  "required": "true",
+                  "unspecified": "true",
+                  "hide": {
+                    "hideWhenExpression": "!includes('dsdService','b5ddaf2e-dae3-4e4d-81ca-6cead3d59973')"
+                  },
+                  "validators": [
+                    {
+                      "type": "date",
+                      "allowFutureDates": "false"
+                    },
+                    {
+                      "type": "js_expression",
+                      "failsWhenExpression": "isDateBefore(myValue, '1980-01-01') || myValue >= today()"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "Reason for disenrolling from DSD",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "163513AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "reasonForDiscontinuingDSD",
+              "behaviours": [
+                {
+                  "intent": "*",
+                  "required": "true",
+                  "unspecified": "true",
+                  "hide": {
+                    "hideWhenExpression": "!includes('dsdService','b5ddaf2e-dae3-4e4d-81ca-6cead3d59973')"
+                  },
+                  "validators": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Differentiated Service Delivery Models",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Antiretroviral treatment refill model",
+              "type": "obs",
+              "required": false,
+              "id": "facilityDSDModel",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "166448AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "conceptMappings": [
+                  {
+                    "relationship": "SAME-AS",
+                    "type": "KenyaEMR",
+                    "value": "164947"
+                  },
+                  {
+                    "relationship": "SAME-AS",
+                    "type": "CIEL",
+                    "value": "166448"
+                  },
+                  {
+                    "relationship": "NARROWER-THAN",
+                    "type": "SNOMED CT",
+                    "value": "363819003"
+                  }
+                ],
+                "answers": [
+                  {
+                    "concept": "166443AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Community medication distribution, healthcare worker led"
+                  },
+                  {
+                    "concept": "166444AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Community medication distribution, peer led"
+                  },
+                  {
+                    "concept": "166446AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Express pharmacy pickup without clinician visit"
+                  },
+                  {
+                    "concept": "166445AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Facility group medication distribution"
+                  },
+                  {
+                    "concept": "166447AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Standard pharmacy pickup following clinician visit"
+                  }
+                ]
+              }
+            }
+          ],
+          "behaviours": [
+            {
+              "intent": "*",
+              "required": "true",
+              "unspecified": "true",
+              "hide": {
+                "hideWhenExpression": "!includes('dsdService','9cca15ce-db78-4a39-be0d-aae19e089ec1')"
+              },
+              "validators": []
+            }
+          ]
+        },
+        {
+          "label": "Notes",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Comments",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "165095AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "rows": "",
+                "conceptMappings": [
+                  {
+                    "type": "CIEL",
+                    "value": "165095"
+                  }
+                ]
+              },
+              "id": "dSDNotes"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "availableIntents": [
+    {
+      "intent": "*",
+      "display": "Service Delivery Model"
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "uuid": "b3601923-ff4d-463a-a11a-5f05c14a9565",
+  "referencedForms": [],
+  "encounterType": "e22e39fd-7db2-45e7-80f1-60fa0d5a4378",
+  "encounter": "Service Delivery Model Form",
+  "allowUnspecifiedAll": true,
+  "description": "Document differentiated service deliver enrolment/ disenrolment"
+}
