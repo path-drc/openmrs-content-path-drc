@@ -21,10 +21,10 @@ jobs:
           java-version: 8
           cache: maven
           server-id: github
-          server-username: GITHUB_ACTOR
-          server-password: GITHUB_TOKEN
+          server-username: path-drc-bot
+          server-password: MAVEN_TOKEN
 
       - name: Deploy to GitHub Packages
         run: mvn clean deploy -B -DskipTests
         env:
-          GITHUB_TOKEN: ${{ secrets.PATH_DRC_TOKEN }}
+          MAVEN_TOKEN: ${{ secrets.PATH_DRC_TOKEN }}
