@@ -203,14 +203,12 @@
     </pluginRepositories>
     <distributionManagement>
         <repository>
-            <id>openmrs-repo-modules</id>
-            <name>OpenMRS Nexus Modules</name>
-            <url>http://mavenrepo.openmrs.org/releases</url>
+            <id>github</id>
+            <name>GitHub OWNER Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/path-drc/openmrs-content-path-drc</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
         </repository>
-        <snapshotRepository>
-            <id>openmrs-repo-snapshots</id>
-            <name>OpenMRS Nexus Snapshots</name>
-            <url>http://mavenrepo.openmrs.org/nexus/content/repositories/snapshots</url>
-        </snapshotRepository>
     </distributionManagement>
 </project>
