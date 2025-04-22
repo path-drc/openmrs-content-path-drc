@@ -22,7 +22,7 @@ jobs:
           cache: maven
           server-id: github
           server-username: GITHUB_ACTOR
-          server-password: PATH_DRC_TOKEN
+          server-password: GITHUB_TOKEN
 
       - name: Deploy to GitHub Packages
         run: mvn clean deploy -B -DskipTests
