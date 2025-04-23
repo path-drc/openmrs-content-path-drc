@@ -205,7 +205,7 @@
         <repository>
             <id>github</id>
             <name>GitHub OWNER Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/path-drc/path-drc-emr</url>
+            <url>https://maven.pkg.github.com/path-drc/openmrs-content-path-drc</url>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
