@@ -22,9 +22,9 @@ jobs:
           cache: maven
           server-id: github
           server-username: path-drc-bot
-          server-password: ${{ secrets.PATH_DRC_TOKEN }}
+          server-password: MAVEN_TOKEN
 
       - name: Deploy to GitHub Packages
         run: mvn clean deploy -B -DskipTests
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MAVEN_TOKEN: ${{ secrets.PATH_DRC_TOKEN }}
