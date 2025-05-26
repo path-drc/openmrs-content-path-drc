@@ -1,0 +1,21 @@
+{
+  "uuid": "a969288d-6605-361b-b01c-42f6ef25c0f5",
+  "form": "Transfer Out Form",
+  "description": "Traductions en français pour le formulaire de transfert sortant",
+  "language": "fr",
+  "translations": {
+    "Introduction": "Introduction",
+    "Transfer Out": "Transfert sortant",
+    "Transfer-Out Details": "Détails du transfert sortant",
+    "Receiving Facility": "Établissement de soin de destination",
+    "Transfer-Out Date (Date transfer-out takes effect)": "Date effective du transfert sortant",
+    "Transfer-Out Verification": "Vérification du transfert sortant",
+    "Transfer-out Verified": "Transfert sortant vérifié",
+    "Yes": "Oui",
+    "No": "Non",
+    "Unknown": "Inconnu",
+    "Date verification done": "Date de la vérification",
+    "Notes": "Notes",
+    "Transfer-Out Notes": "Notes sur le transfert sortant"
+  }
+}
