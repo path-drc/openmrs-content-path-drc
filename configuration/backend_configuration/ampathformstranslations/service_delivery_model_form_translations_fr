@@ -1,0 +1,23 @@
+{
+  "uuid": "1e14f841-b42b-3273-93db-807927ca9a82",
+  "form": "Service Delivery Model Form",
+  "description": "Traductions en français pour le formulaire du modèle de prestation de services",
+  "language": "fr",
+  "translations": {
+    "Introduction": "Introduction",
+    "DSD Enrollment": "Inscription au modèle de prestation de services différenciés",
+    "Service Delivery Model": "Modèle de prestation de services",
+    "Date enrolled to DSD": "Date d'inscription au modèle de prestation de services différenciés",
+    "Date disenrolled from DSD": "Date de désinscription du modèle de prestation de services différenciés",
+    "Reason for disenrolling from DSD": "Motif de la désinscription du modèle de prestation de services différenciés",
+    "Differentiated Service Delivery Models": "Modèles de prestation de services différenciés",
+    "Antiretroviral treatment refill model": "Modèle de renouvellement du traitement antirétroviral",
+    "Community medication distribution, healthcare worker led": "Distribution communautaire de médicaments dirigée par un professionnel de santé",
+    "Community medication distribution, peer led": "Distribution communautaire de médicaments dirigée par des pairs",
+    "Express pharmacy pickup without clinician visit": "Retrait rapide de médicaments à la pharmacie sans consultation médicale",
+    "Facility group medication distribution": "Distribution groupée de médicaments en établissement de santé",
+    "Comments": "Commentaires",
+    "Standard pharmacy pickup following clinician visit": "Retrait standard de médicaments à la pharmacie après consultation médicale",
+    "Notes": "Notes"
+  }
+}
