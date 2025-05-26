@@ -8692,8 +8692,8 @@
               "id": "labsAndDrugOrders",
               "questionOptions": {
                 "rendering": "workspace-launcher",
-                "buttonLabel": "Add Lab Orders",
-                "workspaceName": "add-lab-order"
+                "buttonLabel": "+ Lab Orders",
+                "workspaceName": "order-basket"
               }
             },
             {
