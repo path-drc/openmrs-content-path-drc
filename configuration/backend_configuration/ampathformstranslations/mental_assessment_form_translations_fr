@@ -1,0 +1,31 @@
+{
+  "uuid": "2069bd57-d534-3de9-ae24-f1d4e4b2de83",
+  "form": "Mental Health Assessment Form",
+  "description": "Traductions en français pour le formulaire d'évaluation de la santé mentale",
+  "language": "fr",
+  "translations": {
+    "PHQ-2": "PHQ-2",
+    "Introduction": "Introduction",
+    "Patient Health Questionnaire-2 (PHQ-2)": "Questionnaire de santé des patients - 2 (PHQ-2)",
+    "Screening Date": "Date du dépistage",
+    "1. Little interest or pleasure in doing things": "1. Peu d'intérêt ou de plaisir à entreprendre des activités",
+    "Not at all": "Pas du tout",
+    "Several days": "Quelques jours",
+    "More than half the days": "Plus de la moitié des jours",
+    "Nearly every day": "Presque tous les jours",
+    "2. Feeling down, depressed or hopeless": "2. Se sentir abattu, déprimé ou sans espoir",
+    "Further evaluation": "Évaluation approfondie",
+    "3. Trouble falling asleep, staying asleep, or sleeping too much": "3. Difficultés à s'endormir, à rester endormi ou sommeil excessif",
+    "4. Feeling tired or having little energy": "4. Sensation de fatigue ou manque d'énergie",
+    "5. Poor appetite or overeating": "5. Perte d'appétit ou excès alimentaires",
+    "6. Feeling bad about yourself - or that you’re a failure or have let yourself or your family down": "6. Sentiment de dévalorisation, d'échec ou de déception envers soi-même ou sa famille",
+    "7. Trouble concentrating on things, such as reading the newspaper or watching television": "7. Difficulté à se concentrer sur des activités, comme lire le journal ou regarder la télévision",
+    "8. Moving or speaking so slowly that other people could have noticed. Or, the opposite - being so fidgety or restless that you have been moving around a lot more than usual": "8. Mouvements ou parole ralentis au point d'être remarqués par autrui, ou au contraire, agitation ou nervosité excessive entraînant une hyperactivité inhabituelle",
+    "9. Thoughts that you would be better off dead or of hurting yourself in some way": "9. Pensées de mort ou d'automutilation",
+    "PHQ-9 score": "Score PHQ-9",
+    "Total scores": "Score total",
+    "PHQ-9 score obtained by adding score for each question": "Score PHQ-9 obtenu par l'addition des scores de chaque question",
+    "Mental Health Assessment Notes": "Notes sur l'évaluation de la santé mentale",
+    "Notes": "Notes"
+  }
+}
