@@ -1,0 +1,21 @@
+{
+  "uuid": "cb30cea5-3166-3e88-befb-9141e5f3769d",
+  "form": "Age Appropriate Disclosure Form",
+  "description": "Traductions en français pour le formulaire de conseil de divulgation adapté à l'âge pour les enfants et adolescents",
+  "language": "fr",
+  "translations": {
+    "Stage of Disclosure": "Étape de la divulgation",
+    "Introduction": "Introduction",
+    "Current Stage of Disclosure": "Étape actuelle de la divulgation",
+    "Date of Disclosure": "Date de la divulgation",
+    "Stage of disclosure": "Étape de la divulgation",
+    "Pre-disclosure": "Phase de pré-divulgation",
+    "Partial disclosure": "Divulgation partielle",
+    "Full disclosure: Stage 1": "Divulgation complète : Étape 1",
+    "Full disclosure: Stage 2": "Divulgation complète : Étape 2",
+    "Full disclosure: Stage 3": "Divulgation complète : Étape 3",
+    "Full disclosure: Stage 4": "Divulgation complète : Étape 4",
+    "Notes": "Notes",
+    "Disclosure Notes": "Notes sur la divulgation"
+  }
+}
