@@ -17,7 +17,6 @@
     "Adult 1st line ARV regimen": "Traitement ARV de première intention chez l'adulte",
     "Child 1st line ARV regimen": "Traitement ARV de première intention chez l'enfant",
     "Regimen": "Traitement",
-    // ... (rest of your ARV drug combinations)
     "Switch Regimen Line": "Changer la ligne de traitement",
     "Date regimen line switched": "Date de changement de ligne de traitement",
     "Reason for switching regimen line": "Motif du changement de ligne de traitement",
