@@ -1527,9 +1527,6 @@
               "questionOptions": {
                 "concept": "160618AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "textarea"
-              },
-              "hide": {
-                "hideWhenExpression": "'"
               }
             }
           ]

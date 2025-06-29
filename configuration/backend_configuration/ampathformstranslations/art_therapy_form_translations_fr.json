@@ -1,5 +1,5 @@
 {
-  "uuid": "f99fadd8-feb7-321c-ab58-7569805668e7",
+  "uuid": "",
   "form": "ART Therapy Form",
   "description": "Traductions en français pour 'ART Therapy Form'",
   "language": "fr",
@@ -17,10 +17,6 @@
     "Adult 1st line ARV regimen": "Traitement ARV de première intention chez l'adulte",
     "Child 1st line ARV regimen": "Traitement ARV de première intention chez l'enfant",
     "Regimen": "Traitement",
-<<<<<<< patch-20
-=======
-    // ... (rest of your ARV drug combinations)
->>>>>>> main
     "Switch Regimen Line": "Changer la ligne de traitement",
     "Date regimen line switched": "Date de changement de ligne de traitement",
     "Reason for switching regimen line": "Motif du changement de ligne de traitement",
