@@ -761,7 +761,7 @@
     }
   ],
   "processor": "EncounterFormProcessor",
-  "uuid": "82674211-3b30-4c9d-95f6-9df694635845",
+  "uuid": "d02c37e0-3466-33ca-add7-7da430fb85ca",
   "referencedForms": [],
   "encounterType": "111c2104-991d-4b58-a30e-ce84bb275534",
   "encounter": "HIV Death Form",

@@ -2237,7 +2237,7 @@
   "processor": "EncounterFormProcessor",
   "uuid": "07df02ba-1352-4a7b-bf87-b4729ba3def0",
   "referencedForms": [],
-  "encounterType": "7e54cd64-f9c3-11eb-8e6a-57478ce139b0",
+  "encounterType": "84644755-edbb-3ada-a272-fa89a671904c",
   "encounter": "Care and Treatment Service Enrolment",
   "allowUnspecifiedAll": false,
   "description": "HIV information"
