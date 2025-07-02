@@ -2616,7 +2616,7 @@
     }
   ],
   "processor": "EncounterFormProcessor",
-  "uuid": "08f326c3-8dc4-489e-aa19-604adb27a2c4",
+  "uuid": "322650ad-dfad-3b69-b2f3-1f79aee14e85",
   "referencedForms": [],
   "encounterType": "7e54cd64-f9c3-11eb-8e6a-57478ce139b0",
   "encounter": "Care and Treatment Service Enrolment",

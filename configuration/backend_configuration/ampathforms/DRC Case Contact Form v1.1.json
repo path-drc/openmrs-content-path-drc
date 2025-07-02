@@ -1134,7 +1134,7 @@
     }
   ],
   "processor": "EncounterFormProcessor",
-  "uuid": "a95f5eb6-333d-4729-b267-ac7bae21193c",
+  "uuid": "4c7b0655-6a2a-3582-823c-1ec754558364",
   "referencedForms": [],
   "encounterType": "570e9e42-4306-41dc-9bf8-634bbc70a524",
   "encounter": "Contact Tracing Form",

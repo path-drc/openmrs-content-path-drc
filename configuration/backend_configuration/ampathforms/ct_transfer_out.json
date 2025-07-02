@@ -268,7 +268,7 @@
     }
   ],
   "processor": "EncounterFormProcessor",
-  "uuid": "68fcd696-0cae-4d04-811d-9e48a9a52a4f",
+  "uuid": "a969288d-6605-361b-b01c-42f6ef25c0f5",
   "referencedForms": [],
   "encounterType": "e22e39fd-7db2-45e7-80f1-60fa0d5a4378",
   "encounter": "Transfer Out",
