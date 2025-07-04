@@ -157,9 +157,6 @@
                   "intent": "*",
                   "required": "true",
                   "unspecified": "true",
-                  "hide": {
-                    "hideWhenExpression": "false"
-                  },
                   "validators": []
                 }
               ]
@@ -299,9 +296,6 @@
                   "intent": "*",
                   "required": "true",
                   "unspecified": "true",
-                  "hide": {
-                    "hideWhenExpression": "false"
-                  },
                   "validators": []
                 }
               ]
@@ -345,13 +339,12 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "!includes('patientContacted','1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
+                "hideWhenExpression": "patientContacted !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               },
               "id": "outcomePatient",
               "behaviours": [
                 {
                   "intent": "*",
-                  "required": "true",
                   "unspecified": "true",
                   "validators": []
                 }
@@ -487,7 +480,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "!includes('outcomePatient','159381AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
+                "hideWhenExpression": "outcomePatient !== '159381AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               },
               "id": "contactBooked",
               "behaviours": [
@@ -508,7 +501,7 @@
                 "weeksList": ""
               },
               "hide": {
-                "hideWhenExpression": "!includes('outcomePatient','159381AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
+                "hideWhenExpression": "outcomePatient !== '159381AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               },
               "id": "dateBooked",
               "behaviours": [
@@ -659,7 +652,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "!includes('outcomePatient','164167AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
+                "hideWhenExpression": "outcomePatient !== '164167AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               },
               "id": "contactHIVTesting",
               "behaviours": [
@@ -851,7 +844,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "!includes('outcomePatient','164167AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
+                "hideWhenExpression": "outcomePatient !== '164167AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               },
               "id": "contactHIVStatus",
               "behaviours": [
@@ -870,7 +863,7 @@
               "required": "false",
               "unspecified": "false",
               "hide": {
-                "hideWhenExpression": "!includes('outcomePatient','159381AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA') || outcomePatient !== '164167AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' "
+                "hideWhenExpression": "outcomePatient !== '159381AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA') || outcomePatient !== '164167AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' "
               },
               "validators": []
             }
@@ -976,9 +969,6 @@
                   "intent": "*",
                   "required": "true",
                   "unspecified": "true",
-                  "hide": {
-                    "hideWhenExpression": "false"
-                  },
                   "validators": []
                 }
               ]
@@ -1042,14 +1032,14 @@
                 ]
               },
               "id": "finalContactOutcome",
+              "hide": {
+                "hideWhenExpression": "finalOutcomeReached !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              },
               "behaviours": [
                 {
                   "intent": "*",
                   "required": "true",
                   "unspecified": "true",
-                  "hide": {
-                    "hideWhenExpression": "!includes('finalOutcomeReached','1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
-                  },
                   "validators": []
                 }
               ]
