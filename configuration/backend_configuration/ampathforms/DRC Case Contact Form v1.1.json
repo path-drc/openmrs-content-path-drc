@@ -466,14 +466,14 @@
                 ]
               },
               "id": "outcomePatient",
+              "hide": {
+                "hideWhenExpression": "patientContacted !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              },
               "behaviours": [
                 {
                   "intent": "*",
                   "required": "true",
                   "unspecified": "true",
-                  "hide": {
-                    "hideWhenExpression": "!includes('patientContacted','1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
-                  },
                   "validators": []
                 }
               ]
@@ -608,14 +608,14 @@
                 ]
               },
               "id": "contactBooked",
+              "hide": {
+                "hideWhenExpression": "outcomePatient !== '56f6a5a4-7ef9-4af3-a250-26b3894e711b'"
+              },
               "behaviours": [
                 {
                   "intent": "*",
                   "required": "true",
                   "unspecified": "true",
-                  "hide": {
-                    "hideWhenExpression": "!includes('outcomePatient','56f6a5a4-7ef9-4af3-a250-26b3894e711b')"
-                  },
                   "validators": []
                 }
               ]
@@ -629,14 +629,14 @@
                 "weeksList": ""
               },
               "id": "dateBooked",
+              "hide": {
+                "hideWhenExpression": "outcomePatient !== '56f6a5a4-7ef9-4af3-a250-26b3894e711b'"
+              },
               "behaviours": [
                 {
                   "intent": "*",
                   "required": "true",
                   "unspecified": "true",
-                  "hide": {
-                    "hideWhenExpression": "!includes('outcomePatient','56f6a5a4-7ef9-4af3-a250-26b3894e711b')"
-                  },
                   "validators": [
                     {
                       "type": "date",
@@ -780,14 +780,14 @@
                 ]
               },
               "id": "contactHIVTesting",
+              "hide": {
+                "hideWhenExpression": "outcomePatient !== '83f1c235-de6f-4141-8d8d-73a917b781de'"
+              },
               "behaviours": [
                 {
                   "intent": "*",
                   "required": "true",
                   "unspecified": "true",
-                  "hide": {
-                    "hideWhenExpression": "!includes('outcomePatient','83f1c235-de6f-4141-8d8d-73a917b781de')"
-                  },
                   "validators": []
                 }
               ]
@@ -911,7 +911,7 @@
               "required": "false",
               "unspecified": "false",
               "hide": {
-                "hideWhenExpression": "!includes('outcomePatient','56f6a5a4-7ef9-4af3-a250-26b3894e711b') || outcomePatient !== '83f1c235-de6f-4141-8d8d-73a917b781de' "
+                "hideWhenExpression": "outcomePatient !== '56f6a5a4-7ef9-4af3-a250-26b3894e711b' || outcomePatient !== '83f1c235-de6f-4141-8d8d-73a917b781de'"
               },
               "validators": []
             }
@@ -1083,14 +1083,14 @@
                 ]
               },
               "id": "finalContactOutcome",
+              "hide": {
+                "hideWhenExpression": "finalOutcomeReached !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              },
               "behaviours": [
                 {
                   "intent": "*",
                   "required": "true",
                   "unspecified": "true",
-                  "hide": {
-                    "hideWhenExpression": "!includes('finalOutcomeReached','1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
-                  },
                   "validators": []
                 }
               ]

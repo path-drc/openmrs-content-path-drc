@@ -3,7 +3,7 @@
   "version": "1",
   "published": true,
   "retired": false,
-  "description":"intimate partner abuse or aggression that occurs in a romantic relationship",
+  "description": "intimate partner abuse or aggression that occurs in a romantic relationship",
   "pages": [
     {
       "label": "IPV Screening",
@@ -199,14 +199,14 @@
                 ]
               },
               "id": "SexuallyMolestedbyWho",
+              "hide": {
+                "hideWhenExpression": "everForcedSexually !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              },
               "behaviours": [
                 {
                   "intent": "*",
                   "required": "true",
                   "unspecified": "true",
-                  "hide": {
-                    "hideWhenExpression": "!includes('everForcedSexually','1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
-                  },
                   "validators": []
                 }
               ]
