@@ -20,7 +20,7 @@ jobs:
           distribution: "temurin"
           java-version: 8
           cache: maven
-          server-id: github
+          server-id: path-drc
           server-username: path-drc-bot
           server-password: MAVEN_TOKEN
 
