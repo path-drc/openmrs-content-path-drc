@@ -203,12 +203,14 @@
     </pluginRepositories>
     <distributionManagement>
         <repository>
-            <id>github</id>
-            <name>GitHub OWNER Apache Maven Packages</name>
+            <id>path-drc</id>
+            <name>PATH DRC GitHub</name>
             <url>https://maven.pkg.github.com/path-drc/path-drc-emr</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
         </repository>
+        <snapshotRepository>
+            <id>path-drc</id>
+            <name>PATH DRC GitHub</name>
+            <url>https://maven.pkg.github.com/path-drc/path-drc-emr</url>
+        </snapshotRepository>
     </distributionManagement>
 </project>
