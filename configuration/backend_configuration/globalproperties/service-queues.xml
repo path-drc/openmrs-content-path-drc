@@ -1,8 +1,6 @@
 <config>
-    <globalProperties>
-        <!-- Queue Configuration -->
-
-        <!-- https://app.openconceptlab.org/#/orgs/openmrs/sources/DemoQueueConcepts/concepts/DemoQueue-Service/ -->
+    <globalProperties
+  >        <!-- https://app.openconceptlab.org/#/orgs/openmrs/sources/DemoQueueConcepts/concepts/DemoQueue-Service/ -->
         <globalProperty>
             <property>queue.serviceConceptSetName</property>
             <value>a8f3f64a-11d5-4a09-b0fb-c8118fa349f3</value>
@@ -24,16 +22,6 @@
         <globalProperty>
             <property>queue.sortWeightGenerator</property>
             <value>basicPrioritySortWeightGenerator</value>
-        </globalProperty>
-
-        <globalProperty>
-            <property>concept.causeOfDeath</property>
-            <value>9272a14b-7260-4353-9e5b-5787b5dead9d</value>
-        </globalProperty>
-
-        <globalProperty>
-            <property>attachments.allowedFileExtensions</property>
-            <value>jpeg,jpg,png,pdf</value>
         </globalProperty>
     </globalProperties>
 </config>
