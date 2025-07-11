@@ -11,23 +11,23 @@
     "Encounter Provider": "Prestataire de soins",
     "Role": "Rôle",
     "Encounter Location": "Lieu de la visite",
-    "Contact Date": "Date de contact"'
+    "Contact Date": "Date de contact",
     "Contact Method": "Méthode de contact",
     "Physical contact/client tracing": "Suivi physique des contacts/clients",
     "Telephone contact/client tracing": "Suivi téléphonique des contacts/clients",
     "Other non-coded": "Autre (non codifié)",
-    "Relationship": "Relation".
-    "Partner or spouse": "Partenaire ou conjoint".
-    "Sibling": "Frère et sœur".
-    "Parent": "Parent".
-    "Other": "Autre".
-    "Guardian": "Tuteur".
-    "Grandparent": "Grand-parent".
-    "Age (years)": "Âge (années)".
-    "Gender": "Genre".
-    "Bisexual": "Bisexuel".
-    "Heterosexual": "Hétérosexuel".
-    "Homosexual": "Homosexuel".
+    "Relationship": "Relation",
+    "Partner or spouse": "Partenaire ou conjoint",
+    "Sibling": "Frère et sœur",
+    "Parent": "Parent",
+    "Other": "Autre",
+    "Guardian": "Tuteur",
+    "Grandparent": "Grand-parent",
+    "Age (years)": "Âge (années)",
+    "Gender": "Genre",
+    "Bisexual": "Bisexuel",
+    "Heterosexual": "Hétérosexuel",
+    "Homosexual": "Homosexuel",
     "Outcome Contact": "Résultat du contact",
     "Contacted Successfully": "Contact établi avec succès",
     "Yes": "Oui",
@@ -46,12 +46,10 @@
     "Positive": "Séropositif",
     "Negative": "Séronégatif",
     "Indeterminate": "Indéterminé",
-    "Unknown": "Inconnu",
     "Final Outcome Contact": "Résultat final du suivi du contact",
     "Final Outcome reached (After successful or multiple unsuccessful tracing attempts)": "Résultat final obtenu (après un ou plusieurs essais de suivi)",
     "Final outcome contact tracking": "Suivi du résultat final",
     "Partner HIV tested": "Partenaire testé pour le VIH",
-    "Partner confirmed HIV+": "Partenaire confirmé séropositif pour le VIH",
     "Will test elsewhere": "Sera testé ailleurs",
     "Contact is far from this facility": "Le contact est éloigné de cet établissement",
     "Contact unwilling to come": "Le contact refuse de se présenter",
