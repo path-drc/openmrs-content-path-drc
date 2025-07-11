@@ -1,6 +1,6 @@
 {
   "uuid": "",
-  "form": "Contact Tracing Form",
+  "form": "DRC Case Contact Form v1.1",
   "description": "Traductions en français pour le formulaire de recherche des contacts",
   "language": "fr",
   "translations": {
@@ -11,10 +11,23 @@
     "Encounter Provider": "Prestataire de soins",
     "Role": "Rôle",
     "Encounter Location": "Lieu de la visite",
+    "Contact Date": "Date de contact"'
     "Contact Method": "Méthode de contact",
     "Physical contact/client tracing": "Suivi physique des contacts/clients",
     "Telephone contact/client tracing": "Suivi téléphonique des contacts/clients",
     "Other non-coded": "Autre (non codifié)",
+    "Relationship": "Relation".
+    "Partner or spouse": "Partenaire ou conjoint".
+    "Sibling": "Frère et sœur".
+    "Parent": "Parent".
+    "Other": "Autre".
+    "Guardian": "Tuteur".
+    "Grandparent": "Grand-parent".
+    "Age (years)": "Âge (années)".
+    "Gender": "Genre".
+    "Bisexual": "Bisexuel".
+    "Heterosexual": "Hétérosexuel".
+    "Homosexual": "Homosexuel".
     "Outcome Contact": "Résultat du contact",
     "Contacted Successfully": "Contact établi avec succès",
     "Yes": "Oui",
