@@ -1,5 +1,5 @@
 {
-  "uuid": "3a9c853c-caa5-377f-af57-fab09d0d0d39",
+  "uuid": "",
   "form": "DRC HIV Enrolment Form 1.2",
   "description": "Traductions en français pour le formulaire d'inscription VIH",
   "language": "fr",
@@ -66,7 +66,6 @@
     "Non-intravenous drug user": "Usager de drogues par voie non intraveineuse",
     "Refugee": "Réfugié",
     "Uniformed Forces": "Forces en uniforme",
-    "Other": "Autre",
     "Transfer-In": "Transfert entrant",
     "Transferring Facility": "Établissement d'origine du transfert",
     "Start ART Date": "Date de début du traitement ARV",
@@ -118,6 +117,6 @@
     "Re-enrolment Details": "Détails de la réinscription",
     "Date of Re-enrolment": "Date de réinscription",
     "Reason For Re-enrolment": "Raison de la réinscription",
-    "Notes": "Notes",
+    "Notes": "Notes"
   }
 }
