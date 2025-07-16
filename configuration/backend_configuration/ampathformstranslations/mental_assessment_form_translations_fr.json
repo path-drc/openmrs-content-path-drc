@@ -1,11 +1,13 @@
 {
   "uuid": "",
   "form": "Mental Health Assessment Form",
+  "form_name_translation": "Formulaire d'évaluation de la santé mentale",
   "description": "Traductions en français pour le formulaire d'évaluation de la santé mentale",
   "language": "fr",
   "translations": {
     "PHQ-2": "PHQ-2",
     "Introduction": "Introduction",
+    "This form is used : for screening, diagnosing, monitoring and measuring the severity of depression": "Ce formulaire est utilisé : pour le dépistage, le diagnostic, le suivi et la mesure de la sévérité de la dépression",
     "Patient Health Questionnaire-2 (PHQ-2)": "Questionnaire de santé des patients - 2 (PHQ-2)",
     "Screening Date": "Date du dépistage",
     "1. Little interest or pleasure in doing things": "1. Peu d'intérêt ou de plaisir à entreprendre des activités",
