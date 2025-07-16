@@ -1,0 +1,3 @@
+Uuid,Void/Retire,Name,display:en,display:fr,Description,Java class name,Parent,Concept Classes
+131168f4-15f5-102d-96e4-000c29c2a5d7,,Drug Order,Drug Order,Commande de médicament,An order for a medication to be given to the patient,org.openmrs.DrugOrder,,Drug
+52a447d3-a64a-11e3-9aeb-50e549534c5e,,Test Order,Test Order,Commande de test,Order type for test orders,org.openmrs.TestOrder,,Test
