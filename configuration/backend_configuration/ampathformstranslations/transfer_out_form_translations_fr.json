@@ -1,11 +1,12 @@
 {
   "uuid": "",
-  "Transfer Out Form": "Formulaire de transfert",
-  "Use this form to: Transfer out a client": "Utilisez ce formulaire pour : Transférer un client",
+  "Form": "Transfer Out Form",
   "description": "Traductions en français pour le formulaire de transfert sortant",
   "language": "fr",
   "translations": {
+    "Transfer Out Form": "Formulaire de transfert",
     "Introduction": "Introduction",
+    "Use this form to: Transfer out a client": "Utilisez ce formulaire pour : Transférer un client",
     "Transfer Out": "Transfert sortant",
     "Transfer-Out Details": "Détails du transfert sortant",
     "Receiving Facility": "Établissement de soin de destination",
