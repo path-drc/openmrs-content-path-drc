@@ -1,10 +1,12 @@
 {
   "uuid": "",
   "form": "Patient Tracing Form",
+  "form_name_translation": "Formulaire de recherche de patients",
   "description": "Traductions en français pour le formulaire de recherche des patients",
   "language": "fr",
   "translations": {
     "Introduction": "Introduction",
+    "Use this form to: Trace a patient who has missed an appointment or drug pick up": "Utilisez ce formulaire pour Retrouver un patient qui a manqué un rendez-vous ou une collecte de médicaments", 
     "Patient Tracing": "Suivi des patients",
     "Patient Tracing Details": "Détails du suivi des patients",
     "Contact date": "Date de contact",
