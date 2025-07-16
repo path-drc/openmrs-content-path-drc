@@ -1,11 +1,13 @@
 {
   "uuid": "",
   "form": "Age Appropriate Disclosure Form",
+  "form_name_translation": "Formulaire de divulgation adapté à l'âge",
   "description": "Traductions en français pour le formulaire de conseil de divulgation adapté à l'âge pour les enfants et adolescents",
   "language": "fr",
   "translations": {
     "Stage of Disclosure": "Étape de la divulgation",
     "Introduction": "Introduction",
+    "This form is used to: Document age-appropriate disclosure counselling for children and adolescents": "Ce formulaire est utilisé pour : documenter les conseils en matière de divulgation adaptés à l'âge des enfants et des adolescents",
     "Current Stage of Disclosure": "Étape actuelle de la divulgation",
     "Date of Disclosure": "Date de la divulgation",
     "Stage of disclosure": "Étape de la divulgation",
