@@ -1,6 +1,7 @@
 {
   "uuid": "",
-  "form": "Service Delivery Model Form",
+  "Service Delivery Model Form": "Formulaire de modèle de prestation de services",
+  "This form is used to: Document differentiated service delivery enrolment/ disenrolment": "Ce formulaire est utilisé pour : documenter la prestation de services différenciés inscription/ désinscription",
   "description": "Traductions en français pour le formulaire du modèle de prestation de services",
   "language": "fr",
   "translations": {
