@@ -1,11 +1,11 @@
 {
   "uuid": "",
   "form": "ART Therapy Form",
+  "ART Therapy Form": "Formulaire de thérapie ART",
   "description": "Traductions en français pour 'ART Therapy Form'",
   "language": "fr",
   "translations": {
-    "ART Therapy Form": "Formulaire de thérapie ART",
-    "Introduction": "Introduction", 
+   "Introduction": "Introduction", 
     "Use this form to: start ART, substitute an ART line, switch an ART regimen, to stop ART or to restart ART": "Utilisez ce formulaire pour : commencer un traitement ARV, remplacer une ligne ARV, changer de régime ARV, arrêter un traitement ARV ou recommencer un traitement ARV",
     "What do you want to do?": "Que voulez-vous faire ?",
     "Start ART": "Commencer le TAR",
