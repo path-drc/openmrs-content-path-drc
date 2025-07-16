@@ -1,11 +1,12 @@
 {
   "uuid": "",
-  "DRC HIV Enrolment Form 1.2": "Formulaire d'inscription au VIH en RDC 1.2",
-  "Use this form to: Enrol or Re-enrol a client into HIV Care": "Utilisez ce formulaire pour : Inscrire ou réinscrire un client aux soins VIH",
+  "form": "DRC HIV Enrolment Form 1.2",
   "description": "Traductions en français pour le formulaire d'inscription VIH",
   "language": "fr",
   "translations": {
     "Stage of Disclosure": "Étape de la divulgation",
+    "DRC HIV Enrolment Form 1.2": "Formulaire d'inscription au VIH en RDC 1.2",
+    "Use this form to: Enrol or Re-enrol a client into HIV Care": "Utilisez ce formulaire pour : Inscrire ou réinscrire un client aux soins VIH",
     "Introduction": "Introduction",
     "What do you want to do?": "Que souhaitez-vous faire ?",
     "Enrol a new client": "Inscrire un nouveau patient",
