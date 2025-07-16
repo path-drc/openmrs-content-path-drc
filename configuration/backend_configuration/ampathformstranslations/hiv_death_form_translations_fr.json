@@ -1,10 +1,10 @@
 {
   "uuid": "",
   "form": "Death Form",
+  "form_name_translation": "Formulaire de décès lié au VIH", 
   "description": "Traductions en français pour le formulaire de décès dû au VIH",
   "language": "fr",
   "translations": {
-    "HIV Death Form": "Formulaire de décès lié au VIH",
     "Introduction": "Introduction",
     "Death Form": "Formulaire de décès",
     "This form is used to: Document the cause of death of a HIV patient": "Ce formulaire est utilisé pour documenter la cause du décès d'un patient séropositif",
