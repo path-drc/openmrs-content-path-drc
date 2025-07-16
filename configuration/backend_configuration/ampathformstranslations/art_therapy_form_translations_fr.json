@@ -1,11 +1,12 @@
 {
   "uuid": "",
   "form": "ART Therapy Form",
-  "Use this form to: start ART, substitute an ART line, switch an ART regimen, to stop ART or to restart ART": "Utilisez ce formulaire pour : commencer un traitement ARV, remplacer une ligne ARV, changer de régime ARV, arrêter un traitement ARV ou recommencer un traitement ARV.",
   "description": "Traductions en français pour 'ART Therapy Form'",
   "language": "fr",
   "translations": {
-    "Introduction": "Introduction",
+    "ART Therapy Form": "Formulaire de thérapie ART",
+    "Introduction": "Introduction", 
+    "Use this form to: start ART, substitute an ART line, switch an ART regimen, to stop ART or to restart ART": "Utilisez ce formulaire pour : commencer un traitement ARV, remplacer une ligne ARV, changer de régime ARV, arrêter un traitement ARV ou recommencer un traitement ARV",
     "What do you want to do?": "Que voulez-vous faire ?",
     "Start ART": "Commencer le TAR",
     "Substitute ART Regimen": "Substitution du schéma thérapeutique antirétroviral (ARV)",
