@@ -1,11 +1,13 @@
 {
   "uuid": "",
   "form": "Partner Notification Form",
+  "form_name_translation": "Formulaire de notification des partenaires",
   "description": "Traductions en français pour le formulaire de notification des partenaires",
   "language": "fr",
   "translations": {
     "Partner Notification": "Notification des partenaires",
     "Introduction": "Introduction",
+    "Use this form to: Document and screen an index client's contacts for Partner Notification Services": "Utilisez ce formulaire pour : documenter et filtrer les contacts d'un client indexé pour les services de notification aux partenaires",
     "Contact's Information": "Informations du contact",
     "Encounter Date": "Date de la visite",
     "Contact's First Name": "Prénom du contact",
