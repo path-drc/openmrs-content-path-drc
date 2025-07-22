@@ -19,7 +19,7 @@
               },
               "id": "fooMarkdown",
               "value": [
-                "**Use this form to:** Trace a patient who has missed an appointment or drug pick up "
+                "**Use this form to:** Trace a patient who has missed an appointment or drug pick up"
               ]
             }
           ]
@@ -315,7 +315,6 @@
                 "rendering": "select",
                 "concept": "160582AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "answers": [
-
                   {
                     "concept": "1b9a90ef-d7cb-4ff2-ba5f-0757463fae0b",
                     "label": "COVID-19 Restrictions",

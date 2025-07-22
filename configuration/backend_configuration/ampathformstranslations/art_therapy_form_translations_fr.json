@@ -5,6 +5,7 @@
   "description": "Traductions en français pour 'ART Therapy Form'",
   "language": "fr",
   "translations": {
+    "**Use this form to:** start ART, substitute an ART line, switch an ART regimen, to stop ART or to restart ART.": "Utilisez ce formulaire pour: commencer un ART, remplacer une ligne d'ART, changer de régime d'ART, arrêter l'ART ou recommencer l'ART",
     "Introduction": "Introduction",
     "What do you want to do?": "Que voulez-vous faire ?",
     "Start ART": "Commencer le TAR",
