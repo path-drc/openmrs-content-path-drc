@@ -1,12 +1,12 @@
 {
   "uuid": "",
   "form": "DRC Case Contact Form v1.1",
-  "form_name_translation": "Formulaire de contact pour les cas DRC v1.1", 
+  "form_name_translation": "Formulaire de contact pour les cas DRC v1.1",
   "description": "Traductions en français pour le formulaire de recherche des contacts",
   "language": "fr",
   "translations": {
     "Introduction": "Introduction",
-    "Use this form to: Trace a contact of an index client (Child/Sex partner/Someone who they shared a needle with": " Retracer un contact d'un client index (enfant/partenaire sexuel/une personne avec qui il a partagé une seringue)",
+    "**Use this form to:** Trace a contact of an index client (Child/Sex partner/Someone who they shared a needle with)": " Retracer un contact d'un client index (enfant/partenaire sexuel/une personne avec qui il a partagé une seringue)",
     "Case Contact Tracing": "Recherche des contacts",
     "Case Contact Details": "Détails du suivi des contacts",
     "Case Contact Outcome": "Cas Contact Résultat",
