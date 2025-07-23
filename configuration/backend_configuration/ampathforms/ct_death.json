@@ -750,7 +750,7 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Death NOtes",
+              "label": "Death Notes",
               "type": "obs",
               "questionOptions": {
                 "rendering": "textarea",
