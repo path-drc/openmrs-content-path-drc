@@ -450,14 +450,14 @@
                 ]
               },
               "id": "missAppCoded",
+              "hide": {
+                "hideWhenExpression": "patientContacted !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              },
               "behaviours": [
                 {
                   "intent": "*",
                   "required": "true",
                   "unspecified": "true",
-                  "hide": {
-                    "hideWhenExpression": "!includes('patientContacted','1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
-                  },
                   "validators": []
                 }
               ]
@@ -513,14 +513,14 @@
                 ]
               },
               "id": "expectedReturnDate",
+              "hide": {
+                "hideWhenExpression": "patientContacted !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              },
               "behaviours": [
                 {
                   "intent": "*",
                   "required": "true",
                   "unspecified": "true",
-                  "hide": {
-                    "hideWhenExpression": "!includes('patientContacted','1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
-                  },
                   "validators": []
                 }
               ]
@@ -669,14 +669,14 @@
                 ]
               },
               "id": "finalTracingPatient",
+              "hide": {
+                "hideWhenExpression": "finalOutcomeReached !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              },
               "behaviours": [
                 {
                   "intent": "*",
                   "required": "true",
                   "unspecified": "true",
-                  "hide": {
-                    "hideWhenExpression": "!includes('finalOutcomeReached','1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
-                  },
                   "validators": []
                 }
               ]
