@@ -939,6 +939,9 @@
     },
     {
       "label": "OBGYN History",
+      "hide": {
+        "hideWhenExpression": "patient.gender == 'male'"
+      },      
       "sections": [
         {
           "label": "LMP/Pregnancy",
