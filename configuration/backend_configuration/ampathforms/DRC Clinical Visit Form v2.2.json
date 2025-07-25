@@ -3558,10 +3558,7 @@
                   }
                 ]
               },
-              "id": "evaluateForTPT",
-              "hide": {
-                "hideWhenExpression": "onTBRx === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || previousTPT !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
-              }
+              "id": "evaluateForTPT"
             },
             {
               "label": "Tuberculosis prophylaxis plan",
@@ -3731,7 +3728,7 @@
                 }
               ],
               "hide": {
-                "hideWhenExpression": "evaluateForTPT !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || onTBRx === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || previousTPT !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                "hideWhenExpression": "evaluateForTPT !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               },
               "id": "tptProphylaxisPlan"
             },
@@ -3781,7 +3778,7 @@
                 }
               ],
               "hide": {
-                "hideWhenExpression": "tptProphylaxisPlan !== '1256AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || onTBRx === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || previousTPT !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                "hideWhenExpression": "tptProphylaxisPlan !== '1256AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               },
               "id": "currentTPTRegimen"
             },
@@ -3801,9 +3798,6 @@
                     "value": "162320"
                   }
                 ]
-              },
-              "hide": {
-                "hideWhenExpression": "onTBRx === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || previousTPT !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             },
             {
@@ -3890,7 +3884,7 @@
                 }
               ],
               "hide": {
-                "hideWhenExpression": "tptProphylaxisPlan !== '1257AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || onTBRx === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || previousTPT !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                "hideWhenExpression": "tptProphylaxisPlan !== '1257AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               },
               "id": "tptAdherence"
             },
@@ -3910,9 +3904,6 @@
                     "value": "163284"
                   }
                 ]
-              },
-              "hide": {
-                "hideWhenExpression": "onTBRx === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || previousTPT !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             },
             {
@@ -4046,19 +4037,14 @@
                 }
               ],
               "hide": {
-                "hideWhenExpression": "tptProphylaxisPlan !== '1260AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || onTBRx === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || previousTPT !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                "hideWhenExpression": "tptProphylaxisPlan !== '1260AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               },
               "id": "reasonTptStopped"
             }
           ],
-          "behaviours": [
-            {
-              "intent": "*",
-              "hide": {
-                "hideWhenExpression": "onTBRx === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || previousTPT !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
-              }
-            }
-          ]
+          "hide": {
+            "hideWhenExpression": "onTBRx === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || previousTPT !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+          }
         },
         {
           "label": "Treatment of TB",
