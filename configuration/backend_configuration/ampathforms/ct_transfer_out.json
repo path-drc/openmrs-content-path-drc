@@ -213,14 +213,14 @@
                 ]
               },
               "id": "verificationDate",
+              "hide": {
+                "hideWhenExpression": "isTransferOutVerified !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              },
               "behaviours": [
                 {
                   "intent": "*",
                   "required": "true",
                   "unspecified": "true",
-                  "hide": {
-                    "hideWhenExpression": "!includes('isTransferOutVerified','1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
-                  },
                   "validators": [
                     {
                       "type": "date",
