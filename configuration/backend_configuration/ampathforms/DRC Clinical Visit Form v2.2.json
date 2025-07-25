@@ -934,16 +934,6 @@
               ]
             }
           ]
-        },
-        {
-          "label": "new section",
-          "isExpanded": "true",
-          "questions": []
-        },
-        {
-          "label": "another section",
-          "isExpanded": "true",
-          "questions": []
         }
       ]
     },
@@ -2989,6 +2979,9 @@
                   }
                 ]
               },
+              "hide": {
+                "hideWhenExpression": "onTBRx === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              },
               "behaviours": [
                 {
                   "intent": "*",
@@ -3562,7 +3555,10 @@
                   }
                 ]
               },
-              "id": "evaluateForTPT"
+              "id": "evaluateForTPT",
+              "hide": {
+                "hideWhenExpression": "onTBRx === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || previousTPT !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
             },
             {
               "label": "Tuberculosis prophylaxis plan",
@@ -3732,7 +3728,7 @@
                 }
               ],
               "hide": {
-                "hideWhenExpression": "evaluateForTPT !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' "
+                "hideWhenExpression": "evaluateForTPT !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || onTBRx === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || previousTPT !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               },
               "id": "tptProphylaxisPlan"
             },
@@ -3782,7 +3778,7 @@
                 }
               ],
               "hide": {
-                "hideWhenExpression": "tptProphylaxisPlan !== '1256AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                "hideWhenExpression": "tptProphylaxisPlan !== '1256AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || onTBRx === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || previousTPT !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               },
               "id": "currentTPTRegimen"
             },
@@ -3802,6 +3798,9 @@
                     "value": "162320"
                   }
                 ]
+              },
+              "hide": {
+                "hideWhenExpression": "onTBRx === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || previousTPT !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             },
             {
@@ -3888,7 +3887,7 @@
                 }
               ],
               "hide": {
-                "hideWhenExpression": "tptProphylaxisPlan !== '1257AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' "
+                "hideWhenExpression": "tptProphylaxisPlan !== '1257AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || onTBRx === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || previousTPT !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               },
               "id": "tptAdherence"
             },
@@ -3908,6 +3907,9 @@
                     "value": "163284"
                   }
                 ]
+              },
+              "hide": {
+                "hideWhenExpression": "onTBRx === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || previousTPT !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             },
             {
@@ -4041,7 +4043,7 @@
                 }
               ],
               "hide": {
-                "hideWhenExpression": "tptProphylaxisPlan !== '1260AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                "hideWhenExpression": "tptProphylaxisPlan !== '1260AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || onTBRx === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || previousTPT !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               },
               "id": "reasonTptStopped"
             }
@@ -4050,7 +4052,7 @@
             {
               "intent": "*",
               "hide": {
-                "hideWhenExpression": "tbScreeningOutcome !== '664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                "hideWhenExpression": "onTBRx === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || previousTPT !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             }
           ]
@@ -4390,7 +4392,7 @@
                 }
               ],
               "hide": {
-                "hideWhenExpression": "tbScreeningOutcome === '664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || onTBRx === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                "hideWhenExpression": "onTBRx === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               },
               "id": "presumptiveTB"
             },
@@ -7713,6 +7715,9 @@
                     "value": "164361"
                   }
                 ]
+              },
+              "hide": {
+                "hideWhenExpression": "pcpProphylaxis === '1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             },
             {
@@ -8222,6 +8227,9 @@
                     "value": "FluconazoleStartDate"
                   }
                 ]
+              },
+              "hide": {
+                "hideWhenExpression": "cryptoProphylaxis === '1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             },
             {
@@ -8239,6 +8247,9 @@
                     "value": "FluconazoleStopDate"
                   }
                 ]
+              },
+              "hide": {
+                "hideWhenExpression": "cryptoProphylaxis === '1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             }
           ]
