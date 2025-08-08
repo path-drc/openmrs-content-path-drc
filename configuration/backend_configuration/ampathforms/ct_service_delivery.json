@@ -18,7 +18,7 @@
               },
               "id": "fooMarkdown",
               "value": [
-                "**This form is used to:** Document differentiated service deliver enrolment/ disenrolment."
+                "**This form is used to:** Document differentiated service delivery enrollment and disenrollment."
               ]
             }
           ]
@@ -65,26 +65,32 @@
                   "failsWhenExpression": "isDateBefore(myValue, '1980-01-01') || myValue >= today()"
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "label": "DSD Disenrollment (Optional)",
+          "isExpanded": "false",
+          "questions": [
             {
               "label": "Date disenrolled from DSD",
               "type": "obs",
-              "required": true,
+              "required": false,
               "id": "dateDisenrolledDSD",
               "datePickerFormat": "calendar",
               "questionOptions": {
                 "rendering": "date",
-                "concept": "160753AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "concept": "166848AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "conceptMappings": [
                   {
                     "relationship": "SAME-AS",
                     "type": "CIEL",
-                    "value": "160753"
+                    "value": "160754"
                   },
                   {
                     "relationship": "SAME-AS",
                     "type": "SNOMED-CT",
-                    "value": "439771001"
+                    "value": "439771002"
                   }
                 ]
               },
@@ -102,25 +108,77 @@
                 {
                   "type": "js_expression",
                   "failsWhenExpression": "isDateBefore(myValue, '1980-01-01') || myValue >= today()"
+                },
+                {
+                  "type": "js_expression",
+                  "failsWhenExpression": "!isEmpty(myValue) && !isEmpty(dateEnrolledToDSD) && isDateBefore(myValue, dateEnrolledToDSD)",
+                  "message": "Disenrollment date cannot be before enrollment date"
                 }
               ]
             },
             {
               "label": "Reason for disenrolling from DSD",
               "type": "obs",
-              "required": true,
+              "required": false,
               "questionOptions": {
-                "rendering": "text",
-                "concept": "163513AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "rendering": "select",
+                "concept": "161555AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "answers": [
+                  {
+                    "concept": "159598AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Treatment failure"
+                  },
+                  {
+                    "concept": "5240AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Lost to follow-up"
+                  },
+                  {
+                    "concept": "160432AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Dead"
+                  },
+                  {
+                    "concept": "159492AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Transferred out"
+                  },
+                  {
+                    "concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Unknown"
+                  },
+                  {
+                    "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Other"
+                  }
+                ]
               },
               "id": "reasonForDiscontinuingDSD",
               "behaviours": [
                 {
                   "intent": "*",
-                  "unspecified": "true",
-                  "validators": []
+                  "unspecified": "true"
                 }
-              ]
+              ],
+              "hide": {
+                "hideWhenExpression": "isEmpty(dateDisenrolledDSD)"
+              }
+            },
+            {
+              "label": "Other reason (specify)",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "160632AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "otherReasonDSD",
+              "behaviours": [
+                {
+                  "intent": "*",
+                  "unspecified": "true"
+                }
+              ],
+              "hide": {
+                "hideWhenExpression": "reasonForDiscontinuingDSD !== '5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+              }
             }
           ]
         },
@@ -131,7 +189,7 @@
             {
               "label": "Antiretroviral treatment refill model",
               "type": "obs",
-              "required": false,
+              "required": true,
               "id": "facilityDSDModel",
               "questionOptions": {
                 "rendering": "radio",
@@ -175,13 +233,13 @@
                     "label": "Standard pharmacy pickup following clinician visit"
                   }
                 ]
-              }
-            }
-          ],
-          "behaviours": [
-            {
-              "intent": "*",
-              "unspecified": "true"
+              },
+              "behaviours": [
+                {
+                  "intent": "*",
+                  "unspecified": "true"
+                }
+              ]
             }
           ]
         },
@@ -195,7 +253,7 @@
               "questionOptions": {
                 "rendering": "textarea",
                 "concept": "165095AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rows": "",
+                "rows": "4",
                 "conceptMappings": [
                   {
                     "type": "CIEL",
@@ -222,5 +280,5 @@
   "encounterType": "62ee5922-a229-48d3-a1da-875c1ffa9436",
   "encounter": "Service Delivery Model Form",
   "allowUnspecifiedAll": true,
-  "description": "Document differentiated service deliver enrolment/ disenrolment"
+  "description": "Document differentiated service delivery enrollment and disenrollment"
 }
