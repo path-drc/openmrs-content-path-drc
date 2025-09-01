@@ -63,35 +63,35 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "radio",
-                "concept": "573f93e2-12f6-483e-aa6e-14e9b76b311a",
+                "concept": "153b1513-4c90-4a72-9de4-65895eabd901",
                 "answers": [
                   {
-                    "concept": "2961369f-6d08-4553-bc52-329c43135d76",
+                    "concept": "bfa626bf-a639-4627-9333-864e15f51338",
                     "label": "Pre-disclosure",
                     "conceptMappings": []
                   },
                   {
-                    "concept": "621816e2-16ba-4ae3-aa62-b5b3812780c1",
+                    "concept": "69fed866-0059-4e37-aecd-982a16d8a31d",
                     "label": "Partial disclosure",
                     "conceptMappings": []
                   },
                   {
-                    "concept": "761c9ffb-8a75-44c6-bad3-b62cd700d41c",
+                    "concept": "3ac694b2-df54-4b8c-9b45-439f0a9efc7d",
                     "label": "Full disclosure :Stage 1",
                     "conceptMappings": []
                   },
                   {
-                    "concept": "13784dde-37e1-4e40-b224-dbc9701bc605",
+                    "concept": "384dab1e-6d65-465b-9c7a-d9be9d088686",
                     "label": "Full disclosure: Stage 2",
                     "conceptMappings": []
                   },
                   {
-                    "concept": "708acbc1-d493-499c-b3e7-67abd685a943",
+                    "concept": "7a9c374f-4728-4ed8-9c85-f5b5b5b7e364",
                     "label": "Full disclosure: Stage 3",
                     "conceptMappings": []
                   },
                   {
-                    "concept": "37c60d5a-e873-429d-a59f-aeff839ada3c",
+                    "concept": "35a41383-a33a-4be5-93fc-038170776558",
                     "label": "Full disclosure: Stage 4",
                     "conceptMappings": []
                   }
