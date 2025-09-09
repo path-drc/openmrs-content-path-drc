@@ -1,23 +1,37 @@
-name: Build with Maven
+name: Build and Deploy with Maven
 
 on:
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-  workflow_dispatch:
 
 jobs:
+  list-changed-packages:
+    runs-on: ubuntu-latest
+    outputs:
+      changed-packages: ${{ steps.filter-paths.outputs.changes }}
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dorny/paths-filter@v3
+        id: filter-paths
+        with:
+          filters: |
+            "Base Content Package": ./Base\ Content\ Package/**
+            Akram: ./Akram/**
+            Libiski: ./Libiski/**
+
   build:
+    needs: list-changed-packages
+    if: ${{ fromJSON(needs.list-changed-packages.outputs.changed-packages) }}
     strategy:
       matrix:
         platform: [ ubuntu-latest ]
         java-version: [ 8 ]
+        working-directory: ${{ fromJSON(needs.list-changed-packages.outputs.changed-packages) }}
 
     runs-on: ${{ matrix.platform }}
-    env:
-      PLATFORM: ${{ matrix.platform }}
-      JAVA_VERSION: ${{ matrix.java-version }}
 
     steps:
       - uses: actions/checkout@v4
@@ -26,7 +40,41 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: ${{ matrix.java-version }}
+          cache: maven
+          server-id: path-drc
+          server-username: path-drc-bot
+          server-password: MAVEN_TOKEN
       - name: Build with Maven
         id: build_with_maven
         run: |
-          mvn clean verify --batch-mode --file pom.xml
+          mvn clean package --batch-mode --file pom.xml
+        working-directory: ${{ matrix.working-directory }}
+
+  deploy:
+    if: ${{ github.event_name == 'push' }}
+    needs: build
+
+    strategy:
+      matrix:
+        platform: [ ubuntu-latest ]
+        java-version: [ 8 ]
+        working-directory: ${{ fromJSON(needs.list-changed-packages.outputs.changed-packages) }}
+
+    runs-on: ${{ matrix.platform }}
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: ${{ matrix.java-version }}
+          cache: maven
+          server-id: path-drc
+          server-username: path-drc-bot
+          server-password: MAVEN_TOKEN
+      - name: Build with Maven
+        id: build_with_maven
+        run: |
+          mvn clean package --batch-mode --file pom.xml
+        working-directory: ${{ matrix.working-directory }}

@@ -1,0 +1,31 @@
+name: Manual Build and Deploy with Maven
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    strategy:
+      matrix:
+        platform: [ ubuntu-latest ]
+        java-version: [ 8 ]
+        working-directory: ["Base Content Package", Akram, Libiski]
+
+    runs-on: ${{ matrix.platform }}
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: ${{ matrix.java-version }}
+          cache: maven
+          server-id: path-drc
+          server-username: path-drc-bot
+          server-password: MAVEN_TOKEN
+      - name: Build with Maven
+        id: build_with_maven
+        run: |
+          mvn clean deploy --batch-mode --file pom.xml
+        working-directory: ${{ matrix.working-directory }}

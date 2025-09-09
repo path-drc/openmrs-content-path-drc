@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.openmrs.content</groupId>
-    <artifactId>path.drc</artifactId>
+    <artifactId>path.drc-akram</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>Path DRC Content Package</name>
-    <description>Content Package containing customized metadata for the PATH DRC instance</description>
+    <name>Path DRC Content Package - Akram</name>
+    <description>Content Package containing customized metadata for the PATH DRC Akram instance</description>
     <developers>
         <developer>
             <name>OpenMRS</name>
@@ -39,18 +39,6 @@
                             <sourceFile>${project.basedir}/content.properties</sourceFile>
                         </configuration>
                     </execution>
-                    <!-- Commented out for now
-                    <execution>
-                        <id>validate-configurations</id>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>validate-configurations</goal>
-                        </goals>
-                        <configuration>
-                            <sourceDir>${configuration.dir}/backend_configuration</sourceDir>
-                        </configuration>
-                    </execution>
-                    -->
                 </executions>
             </plugin>
             <plugin>
@@ -112,46 +100,6 @@
                                 </resource>
                             </resources>
                         </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            <!-- Spotless plugin -->
-            <plugin>
-                <groupId>com.diffplug.spotless</groupId>
-                <artifactId>spotless-maven-plugin</artifactId>
-                <version>2.27.2</version>
-                <configuration>
-                    <java>
-                        <licenseHeader>
-                            <file>${project.basedir}/license-header.txt</file>
-                        </licenseHeader>
-                        <eclipse>
-                            <file>${project.basedir}/OpenMRSFormatter.xml</file>
-                        </eclipse>
-                        <removeUnusedImports/>
-                        <importOrder>
-                            <order>javax,java</order>
-                        </importOrder>
-                    </java>
-                    <formats>
-                        <format>
-                            <includes>
-                                <include>**/*.xml</include>
-                            </includes>
-                            <licenseHeader>
-                                <file>${project.basedir}/license-header.txt</file>
-                                <delimiter>^(?!&lt;\?xml)</delimiter>
-                            </licenseHeader>
-                        </format>
-                    </formats>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>spotless-apply</id>
-                        <phase>validate</phase>
-                        <goals>
-                            <goal>apply</goal>
-                        </goals>
                     </execution>
                 </executions>
             </plugin>
