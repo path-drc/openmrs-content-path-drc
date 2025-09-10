@@ -5,9 +5,11 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  workflow_dispatch:
+
 
 jobs:
-  list-changed-packages:
+  get-changed-packages:
     runs-on: ubuntu-latest
     outputs:
       changed-packages: ${{ steps.filter-paths.outputs.changes }}
@@ -18,18 +20,49 @@ jobs:
         id: filter-paths
         with:
           filters: |
-            "Base Content Package": ./Base\ Content\ Package/**
-            Akram: ./Akram/**
-            Libiski: ./Libiski/**
+            common: &common
+              - ./.github/workflows/main.yml
+            "Base Content Package":
+              - *common
+              - ./Base\ Content\ Package/**
+            Akram:
+              - *common
+              - ./Akram/**
+            Libiski:
+              - *common
+              - ./Libiski/**
+
+  list-changed-packages:
+    needs: get-changed-packages
+    runs-on: ubuntu-latest
+    env:
+      GH_EVENT_NAME: ${{ github.event_name }}
+    outputs:
+      changed-packages: ${{ steps.detect-changes.outputs.changed-packages }}
+    steps:
+      - id: detect-changes
+        run: |
+          case $GH_EVENT_NAME in
+            workflow_dispatch)
+              echo "changed-packages=${{ toJSON('["Base Content Package", Akram, Libiski]') }}" >> $GITHUB_OUTPUT
+              ;;
+            workflow_call)
+              echo "changed-packages=${{ toJSON('["Base Content Package", Akram, Libiski]') }}" >> $GITHUB_OUTPUT
+              ;;
+            *)
+              echo "changed-packages=${{ toJSON(needs.get-changed-packages.outputs.changed-packages) }}" >> $GITHUB_OUTPUT
+              ;;
+          esac
 
   build:
-    needs: list-changed-packages
-    if: ${{ fromJSON(needs.list-changed-packages.outputs.changed-packages) }}
+    needs: [ get-changed-packages, list-changed-packages ]
     strategy:
       matrix:
         platform: [ ubuntu-latest ]
         java-version: [ 8 ]
         working-directory: ${{ fromJSON(needs.list-changed-packages.outputs.changed-packages) }}
+        exclude:
+          - working-directory: common
 
     runs-on: ${{ matrix.platform }}
 
@@ -51,14 +84,16 @@ jobs:
         working-directory: ${{ matrix.working-directory }}
 
   deploy:
-    if: ${{ github.event_name == 'push' }}
-    needs: build
+    if: ${{ contains(fromJSON('["push", "workflow_dispatch"]'), github.event_name) }}
+    needs: [ get-changed-packages, list-changed-packages, build ]
 
     strategy:
       matrix:
         platform: [ ubuntu-latest ]
         java-version: [ 8 ]
         working-directory: ${{ fromJSON(needs.list-changed-packages.outputs.changed-packages) }}
+        exclude:
+          - working-directory: common
 
     runs-on: ${{ matrix.platform }}
 
@@ -76,5 +111,5 @@ jobs:
       - name: Build with Maven
         id: build_with_maven
         run: |
-          mvn clean package --batch-mode --file pom.xml
+          mvn deploy --batch-mode --file pom.xml
         working-directory: ${{ matrix.working-directory }}
