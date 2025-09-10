@@ -1,9 +1,9 @@
 {
-  "name": "Death Form",
+  "name": "HIV Cause of Death Form",
   "version": "1",
   "published": true,
   "retired": false,
-  "description":"Document the cause of death of a HIV patient",
+  "description": "Document the cause of death of a HIV patient",
   "pages": [
     {
       "label": "HIV Cause of Death Form",
