@@ -113,3 +113,5 @@ jobs:
         run: |
           mvn deploy --batch-mode --file pom.xml
         working-directory: ${{ matrix.working-directory }}
+        env:
+          MAVEN_TOKEN: ${{ secrets.PATH_DRC_TOKEN }}
