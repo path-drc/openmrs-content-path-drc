@@ -6,7 +6,7 @@
   "description":"Document the cause of death of a HIV patient",
   "pages": [
     {
-      "label": "HIV Death Form",
+      "label": "HIV Cause of Death Form",
       "sections": [
         {
           "label": "Introduction",
