@@ -313,10 +313,10 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "select",
-                "concept": "160582AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "concept": "cf5c31c0-6a13-4f35-b034-71263dfb1227",
                 "answers": [
                   {
-                    "concept": "1b9a90ef-d7cb-4ff2-ba5f-0757463fae0b",
+                    "concept": "93544fbd-2a63-4f50-86f6-4e0676104fc1",
                     "label": "COVID-19 Restrictions",
                     "conceptMappings": []
                   },
@@ -541,7 +541,7 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "radio",
-                "concept": "160721AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "concept": "afffdb8c-e6d5-4c4d-8ed6-6fe7d8423261",
                 "answers": [
                   {
                     "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -639,7 +639,7 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "radio",
-                "concept": "160433AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "concept": "1eeb0bb7-78ad-456a-b395-80766eb59050",
                 "answers": [
                   {
                     "concept": "160432AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
