@@ -347,10 +347,10 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "select",
-                "concept": "efd206db-ed68-4ac3-8916-da524f029643",
+                "concept": "159988AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "answers": [
                   {
-                    "concept": "b35448c5-d696-435f-b722-5f284a0995c1",
+                    "concept": "138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "HIV disease resulting in Kaposi's sarcoma",
                     "conceptMappings": [
                       {
@@ -414,7 +414,7 @@
                     ]
                   },
                   {
-                    "concept": "a0081f9b-afd9-400a-97d7-b39d921cfb66",
+                    "concept": "1f95a880-7651-48a8-afd3-683334907abb",
                     "label": "HIV disease resulting in other type of non-Hodgkin lymphoma",
                     "conceptMappings": [
                       {
@@ -478,7 +478,7 @@
                     ]
                   },
                   {
-                    "concept": "42ca0273-6afa-44c8-94ad-8400e5835570",
+                    "concept": "156672AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "HIV disease resulting in unspecified malignant neoplasms",
                     "conceptMappings": [
                       {
@@ -507,7 +507,7 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "select",
-                "concept": "1c06de20-fbc0-4d42-a638-f273e5db2146",
+                "concept": "160159AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "answers": [
                   {
                     "concept": "156668AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -656,7 +656,7 @@
                     ]
                   },
                   {
-                    "concept": "af8b7e7c-c3f7-4985-a2db-8864468adbab",
+                    "concept": "7c5dbf18-3abd-4895-98d9-a10cf01e1b34",
                     "label": "HIV disease resulting in other bacterial infections",
                     "conceptMappings": [
                       {
@@ -666,7 +666,7 @@
                     ]
                   },
                   {
-                    "concept": "e466147b-a02e-4e8a-a978-58f1c94512b6",
+                    "concept": "a6ce69bc-e941-429b-a442-1ca586f727a7",
                     "label": "HIV disease resulting in other viral infections",
                     "conceptMappings": [
                       {
@@ -709,7 +709,7 @@
                     "conceptMappings": []
                   },
                   {
-                    "concept": "a3a83d0d-bfe8-464e-9a1a-67857c88dfa3",
+                    "concept": "160160AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "HIV disease resulting in other conditions",
                     "conceptMappings": [
                       {
@@ -719,7 +719,7 @@
                     ]
                   },
                   {
-                    "concept": "746d0622-21d3-4c57-8ee9-4e2a69637d8c",
+                    "concept": "138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Unspecified HIV disease",
                     "conceptMappings": [
                       {
