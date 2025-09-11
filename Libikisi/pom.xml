@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.openmrs.content</groupId>
-    <artifactId>path.drc-libiski</artifactId>
+    <artifactId>path.drc-libikisi</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>Path DRC Content Package - Libiski</name>
-    <description>Content Package containing customized metadata for the PATH DRC Libiski instance</description>
+    <name>Path DRC Content Package - Libikisi</name>
+    <description>Content Package containing customized metadata for the PATH DRC Libikisi instance</description>
     <developers>
         <developer>
             <name>OpenMRS</name>

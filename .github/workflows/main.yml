@@ -28,9 +28,9 @@ jobs:
             Akram:
               - *common
               - ./Akram/**
-            Libiski:
+            Libikisi:
               - *common
-              - ./Libiski/**
+              - ./Libikisi/**
 
   list-changed-packages:
     needs: get-changed-packages
@@ -44,10 +44,10 @@ jobs:
         run: |
           case $GH_EVENT_NAME in
             workflow_dispatch)
-              echo "changed-packages=${{ toJSON('["Base Content Package", Akram, Libiski]') }}" >> $GITHUB_OUTPUT
+              echo "changed-packages=${{ toJSON('["Base Content Package", Akram, Libikisi]') }}" >> $GITHUB_OUTPUT
               ;;
             workflow_call)
-              echo "changed-packages=${{ toJSON('["Base Content Package", Akram, Libiski]') }}" >> $GITHUB_OUTPUT
+              echo "changed-packages=${{ toJSON('["Base Content Package", Akram, Libikisi]') }}" >> $GITHUB_OUTPUT
               ;;
             *)
               echo "changed-packages=${{ toJSON(needs.get-changed-packages.outputs.changed-packages) }}" >> $GITHUB_OUTPUT
