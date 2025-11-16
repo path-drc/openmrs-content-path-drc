@@ -6,7 +6,7 @@
         </globalProperty>
         <globalProperty>
             <property>billing.receipt.logoPath</property>
-            <value>/openmrs/data/billing/logo.png</value>
+            <value>/openmrs/assets/logo.png</value>
         </globalProperty>
     </globalProperties>
 </config>
