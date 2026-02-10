@@ -8,5 +8,9 @@
             <property>billing.receipt.logoPath</property>
             <value>/openmrs/assets/logo.png</value>
         </globalProperty>
+        <globalProperty>
+            <property>billing.currencySymbol</property>
+            <value>CDF</value>
+        </globalProperty>
     </globalProperties>
 </config>
