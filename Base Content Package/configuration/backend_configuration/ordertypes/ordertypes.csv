@@ -1,3 +1,5 @@
 Uuid,Void/Retire,Name,display:en,display:fr,Description,Java class name,Parent,Concept Classes
 131168f4-15f5-102d-96e4-000c29c2a5d7,,Drug Order,Drug Order,Commande de médicament,An order for a medication to be given to the patient,org.openmrs.DrugOrder,,Drug
-52a447d3-a64a-11e3-9aeb-50e549534c5e,,Test Order,Test Order,Commande de test,Order type for test orders,org.openmrs.TestOrder,,Test
+52a447d3-a64a-11e3-9aeb-50e549534c5e,,Test Order,Test Order,Commande de test,Order type for test orders,org.openmrs.TestOrder,,Test9c786025-575e-4b31-8c5c-e0907d574f4c,,Imaging Order,Imaging Order,Examens d’imagerie,Order type for imaging and radiology exams,org.openmrs.TestOrder,,Radiology/Imaging Procedure
+89b2923d-cd99-4cce-8098-79d0fe23f1ea,,Procedure Order,Procedure Order,Ordres de procédures,Order type for clinical procedures,org.openmrs.TestOrder,,Procedure
+3fefd401-acf3-4969-9d2b-1bf7a01b112b,,Medical Supply Order,Medical Supply Order,Fournitures médicales,Order type for medical supplies,org.openmrs.Order,,Medical supply
