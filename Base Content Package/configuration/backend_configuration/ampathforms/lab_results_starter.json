@@ -1,0 +1,330 @@
+{
+  "name": "Lab Results Starter",
+  "version": "1",
+  "published": true,
+  "retired": false,
+  "encounter": "Lab Results",
+  "encounterType": "3596fafb-6f6f-4396-8c87-6e63a0f1bd71",
+  "processor": "EncounterFormProcessor",
+  "uuid": "5b391f97-cc31-4fa6-a65f-9d56be88124a",
+  "referencedForms": [],
+  "pages": [
+    {
+      "label": "Lab Results",
+      "sections": [
+        {
+          "label": "Select tests to record",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Which tests do you want to record?",
+              "id": "testsToRecord",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "checkbox-searchable",
+                "isSearchable": true,
+                "concept": "1748a953-d12e-4be1-914c-f6b096c6cdef",
+                "answers": [
+                  {
+                    "concept": "21AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Haemoglobin"
+                  },
+                  {
+                    "concept": "678AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Total WBC count"
+                  },
+                  {
+                    "concept": "729AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Platelets"
+                  },
+                  {
+                    "concept": "679AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Red blood cells"
+                  },
+                  {
+                    "concept": "160912AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Fasting blood glucose"
+                  },
+                  {
+                    "concept": "790AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Serum creatinine"
+                  },
+                  {
+                    "concept": "1132AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Serum sodium"
+                  },
+                  {
+                    "concept": "1133AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Serum potassium"
+                  },
+                  {
+                    "concept": "1006AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Total cholesterol"
+                  },
+                  {
+                    "concept": "45AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Urine pregnancy test"
+                  },
+                  {
+                    "concept": "1875AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Urine protein (dipstick)"
+                  },
+                  {
+                    "concept": "159362AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Fecal occult blood test"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "label": "Results",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Haemoglobin (g/dL)",
+              "id": "haemoglobin",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "21AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "showDate": true
+              },
+              "hide": {
+                "hideWhenExpression": "!arrayContains(testsToRecord, '21AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
+              }
+            },
+            {
+              "label": "Total WBC count (10^3/uL)",
+              "id": "totalWbcCount",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "678AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "showDate": true
+              },
+              "hide": {
+                "hideWhenExpression": "!arrayContains(testsToRecord, '678AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
+              }
+            },
+            {
+              "label": "Platelets (10^3/mL)",
+              "id": "platelets",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "729AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "disallowDecimals": true,
+                "showDate": true
+              },
+              "hide": {
+                "hideWhenExpression": "!arrayContains(testsToRecord, '729AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
+              }
+            },
+            {
+              "label": "Red blood cells (10^6/uL)",
+              "id": "redBloodCells",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "679AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "showDate": true
+              },
+              "hide": {
+                "hideWhenExpression": "!arrayContains(testsToRecord, '679AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
+              }
+            },
+            {
+              "label": "Fasting blood glucose (mg/dL)",
+              "id": "fastingBloodGlucose",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "160912AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "showDate": true
+              },
+              "hide": {
+                "hideWhenExpression": "!arrayContains(testsToRecord, '160912AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
+              }
+            },
+            {
+              "label": "Serum creatinine (umol/L)",
+              "id": "serumCreatinine",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "790AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "showDate": true
+              },
+              "hide": {
+                "hideWhenExpression": "!arrayContains(testsToRecord, '790AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
+              }
+            },
+            {
+              "label": "Serum sodium (mmol/L)",
+              "id": "serumSodium",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "1132AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "disallowDecimals": true,
+                "showDate": true
+              },
+              "hide": {
+                "hideWhenExpression": "!arrayContains(testsToRecord, '1132AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
+              }
+            },
+            {
+              "label": "Serum potassium (mmol/L)",
+              "id": "serumPotassium",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "1133AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "showDate": true
+              },
+              "hide": {
+                "hideWhenExpression": "!arrayContains(testsToRecord, '1133AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
+              }
+            },
+            {
+              "label": "Total cholesterol (mmol/L)",
+              "id": "totalCholesterol",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "1006AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "showDate": true
+              },
+              "hide": {
+                "hideWhenExpression": "!arrayContains(testsToRecord, '1006AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
+              }
+            },
+            {
+              "label": "Urine pregnancy test",
+              "id": "urinePregnancyTest",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "45AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "showDate": true,
+                "answers": [
+                  {
+                    "concept": "664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Negative"
+                  },
+                  {
+                    "concept": "703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Positive"
+                  },
+                  {
+                    "concept": "1138AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Indeterminate"
+                  },
+                  {
+                    "concept": "1304AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Poor sample quality"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "!arrayContains(testsToRecord, '45AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
+              }
+            },
+            {
+              "label": "Urine protein (dipstick)",
+              "id": "urineProteinDipstick",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "1875AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "showDate": true,
+                "answers": [
+                  {
+                    "concept": "664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Negative"
+                  },
+                  {
+                    "concept": "1874AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Trace"
+                  },
+                  {
+                    "concept": "1362AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "One plus"
+                  },
+                  {
+                    "concept": "1363AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Two plus"
+                  },
+                  {
+                    "concept": "1364AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Three plus"
+                  },
+                  {
+                    "concept": "1365AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Four plus"
+                  },
+                  {
+                    "concept": "703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Positive"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "!arrayContains(testsToRecord, '1875AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
+              }
+            },
+            {
+              "label": "Fecal occult blood test",
+              "id": "fecalOccultBloodTest",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "159362AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "showDate": true,
+                "answers": [
+                  {
+                    "concept": "664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Negative"
+                  },
+                  {
+                    "concept": "703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Positive"
+                  },
+                  {
+                    "concept": "1138AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Indeterminate"
+                  }
+                ]
+              },
+              "hide": {
+                "hideWhenExpression": "!arrayContains(testsToRecord, '159362AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "availableIntents": [
+    {
+      "intent": "*",
+      "display": "Lab Results Starter"
+    }
+  ],
+  "description": "Starter form to save lab results"
+}
